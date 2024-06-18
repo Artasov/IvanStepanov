@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Stepanov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wide-classes.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/fontawesome.js"></script>
+    <style>
+        .positions-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 0.75rem; /* Example for rounded-3 class */
+            overflow: hidden;
+        }
+
+        .positions-table th,
+        .positions-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .positions-table th:first-child {
+            border-top-left-radius: 0.75rem; /* Example for rounded-3 class */
+        }
+
+        .positions-table th:last-child {
+            border-top-right-radius: 0.75rem; /* Example for rounded-3 class */
+        }
+
+        .positions-table tr:last-child td:first-child {
+            border-bottom-left-radius: 0.75rem; /* Example for rounded-3 class */
+        }
+
+        .positions-table tr:last-child td:last-child {
+            border-bottom-right-radius: 0.75rem; /* Example for rounded-3 class */
+        }
+    </style>
+</head>
+<body>
+<main class="fc mw-900px p-3 mx-auto">
+    <div class="x-container fr  gap-3">
+        <div class="fc">
+            <div id="carouselExampleInterval" class="carousel rounded-2 carousel-logo slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-2">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="logo-variant rounded-2" src="images/ava.jpg" alt="Ivan Stepanov" width="100%">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="logo-variant rounded-2" src="images/fun_ava.jpg" alt="Ivan Stepanov" width="100%">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="frc position-absolute bottom-3 left-0 w-100">
+                    <div class="social-links frc gap-3">
+                        <a href="https://www.linkedin.com/in/vandigar/" target="_blank">
+                            <i class="fab fa-linkedin fa clickable_icon"></i>
+                        </a>
+                        <a href="https://github.com/stepanovis" target="_blank">
+                            <i class="fab fa-github fa clickable_icon"></i>
+                        </a>
+                        <a href="https://t.me/stepanovis" target="_blank">
+                            <i class="fab fa-telegram fa clickable_icon"></i>
+                        </a>
+                        <a href="mailto:sis@indy.su" target="_blank">
+                            <i class="fa fa-envelope fa clickable_icon"></i>
+                        </a>
+                        <!--                        <a>-->
+                        <!--                            <i class="fab fa-youtube fa clickable_icon"></i>-->
+                        <!--                        </a>-->
+                        <!--                        <a>-->
+                        <!--                            <i class="fa-solid fa-square-h fa clickable_icon"></i>-->
+                        <!--                        </a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fc gap-2 stats-container">
+            <div>
+                <h1 class="fs-06 fw-8">IVAN STEPANOV</h1>
+                <h5>the architect and product manager in one person</h5>
+            </div>
+            <div class="technical-skills  ">
+                <h3><i class="fas fa-cogs"></i> Technical skills</h3>
+                <div class="skills">
+                    <p>System design and architecture</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p>Gitlab CI/CD | Docker | Nginx</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 10%;"></div>
+                    </div>
+                    <p>Python | Fast API | SQL | Asyncio</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="management-skills mt-2">
+                <h3><i class="fas fa-chart-line"></i> Management skills</h3>
+                <div class="management">
+                    <p>Agile project management</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>Product Management</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p>Dev team leader</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                    <p>Enterprise architect</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages mt-2">
+                <h3><i class="fas fa-language"></i> Languages</h3>
+                <div class="languages">
+                    <p>English B2</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>Russian: Native</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                    <p>Portuguese: Beginner</p>
+                    <div class="bar">
+                        <div class="progress" style="width: 5%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="preferred-positions my-3">
+        <h3 class="mb-3"><i class="fas fa-star"></i> Preferred positions</h3>
+        <table class="positions-table rounded-3">
+            <tr>
+                <th>Progressing towards</th>
+                <th>Most efficient</th>
+                <th>Junior with fast growth</th>
+            </tr>
+            <tr>
+                <td>Enterprise architect</td>
+                <td>Senior system analyst</td>
+                <td>Python team lead</td>
+            </tr>
+            <tr>
+                <td>Deputy CTO</td>
+                <td>Tech product owner</td>
+                <td>Python developer</td>
+            </tr>
+            <tr>
+                <td>Digital transformation manager</td>
+                <td>Domain architect</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="work-experience my-3">
+        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+        <div class="fc gap-3 experience-table">
+            <div class="job">
+                <h5>Product manager, Marketplace platform / qlean.ru</h5>
+                <strong class="text-black-a0">Jun 2022 - Jul 2023</strong>
+                <p>
+                    When I joined the company, the process of transitioning from a monolith on ruby to a platform of
+                    services on node.js was underway. A seamless transition was required, given that two mobile apps
+                    were tied to the monolith.<br>
+
+                    Management expected the work was almost done. However, after diving into the project, it became
+                    clear that a new approach to application integration with the platform needed to be designed. During
+                    my time at the company:
+                </p>
+                <div class="ps-3">
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Designed an ACL (anti-corruption layer) for a soft launch of the new platform. Drafted a work
+                            plan that the team followed up until my departure from the company.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Designed the integration of the mobile application for clients, the operational platform, and
+                            the
+                            logistics system for the launch of a new product for goods delivery.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Took over a project initiated by another manager on developing a front-office system for
+                            customer
+                            support. The project deadlines were unclear. Clarified the requirements with the client and
+                            communicated them to the team. Completed the development of the MVP version by the time I
+                            left
+                            the company.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Merged the node.js teams into one to boost the development service's performance since there
+                            were
+                            4 teams with 2 members each. As a result, development began to perform at a predictable
+                            pace.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Set up scrum processes in the development team: planning, daily stand-ups, demos,
+                            retrospectives.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Established performance indicators for the development team: bug tracking in terms of
+                            quantity
+                            and prioritization, tracking of lead time, cycle time, and task analysis in specific
+                            statuses to
+                            identify bottlenecks. One such bottleneck was testing, as there was only one tester.
+                            Therefore,
+                            I partially shifted testing responsibilities onto the backend developers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <h5>System Analyst | Architect | Head of architecture / skyeng.ru</h5>
+                <strong class="text-black-a0">Mar 2018 - Dec 2022</strong>
+                <p>In the company, I transitioned from being a system analyst on the IT projects to the head of IT
+                    architecture department. During this time:</p>
+                <h6 class="text-secondary mt-3">CRM System Transition</h6>
+                <p>I undertook a project to transition from an inhouse CRM system based on a state machine, which served
+                    as the business core and data source for all other systems, to a process-oriented CRM system
+                    consisting of domain components and services. As an analyst, I led a small team of 3 analysts, wrote
+                    user stories, depicted ERD, gathered requirements from the client, and filtered incoming requests
+                    for new feature to meet the deadlines. I resolved all stages from requirement collection to system
+                    deployment.<br>
+
+                    One and a half years of work resulted in more than 200 user stories. With team was developed 5 major
+                    modules: sales, support, teacher search, awake service, and core of system. We provided executable
+                    BPMS diagrams in Camunda and successfully launched the system.</p>
+                <h6 class="text-secondary mt-3">Transition to Architecture Team</h6>
+                <p>After the CRM project was implemented, I joined the architecture team. I designed business solutions
+                    at the IT and business levels of architecture, and validated the economic and business values of
+                    projects. Over a year, I worked on three major projects where I described the business challenges,
+                    potential business and technical solutions and estimate implementation costs. Upon the project
+                    defenses, I successfully argued for the need to abandon the realization because none of the projects
+                    passed an economic justification. One project was simplified to a simple managerial procedure
+                    instead of an expensive IT solution.<br>
+
+                    Company has savings of around ~1m$ by not initiating these projects.</p>
+                <h6 class="text-secondary mt-3">As Head of Architecture</h6>
+                <p>In a role as the head of architecture, I established a repository for ADR and created a universal
+                    dashboard displaying Coupling/Cohesion metrics. Based on this, architects identified problematic
+                    services. I designed another dashboard using Maurice H. Halstead metrics that show which services
+                    need an attention in first priority. I made a IT landscape map with key parameters of services which
+                    help to understand the borders of responsibility of the services and they purpose. Suggested a
+                    architecture of IT landscape where business and IT services had shared boundaries, aiming to form as
+                    many autonomous teams as possible. All of these solutions initiated a consensus process among teams,
+                    uncovering many projects with ambiguous agreements. During my tenure, there were about 20
+                    development teams in the company, facing challenges because teams frequently blocked each other.
+                    Sadly, the enterprise architecture transformation project's deployment was halted due to a crisis in
+                    the company, because of an objective to reduce costs and personnel.<br>
+
+                    I introduced a framework to measure architecture quality, providing an entry point for every
+                    developer to address architectural issues. Two major projects were prepared for corporate
+                    architecture transformation, but unfortunately, they were not initiated.</p>
+            </div>
+            <div class="job">
+                <h5>Product Manager / storverk.ru</h5>
+                <strong class="text-black-a0">Mar 2017 - Mar 2018</strong>
+                <p>
+                    Upon joining the company as an analyst, I enlightened the leadership on the role of a product
+                    manager and successfully persuaded them to expand its responsibilities.<br>
+
+                    The company's product was a CRM system that required modifications for each deployment. The
+                    company's aim was to sell the system as an off-the-shelf solution. To achieve this:
+                </p>
+                <div class="ps-3">
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Sales Management Interface Overhaul: Redesigned the user interfaces for the sales
+                            managers.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Long-term Deals Interface Revamp: Refurbished the interface to manage long-term deals.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Short-term Deals Interface Overhaul: Redesigned the user interface for managing short-term
+                            deals.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Project Management Module Design: Conceived and designed a basic project management
+                            module.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Omnichannel Chat Implementation: Designed and launched an omnichannel chat feature for
+                            interacting with clients.</p>
+                    </div>
+                    <div class="frs gap-2">
+                        <div class="bg-black-c0 rounded-circle"
+                             style="width: 7px; min-width: 7px; height: 7px; margin-top: .55em"></div>
+                        <p>Educational Video Series: Produced a series of video presentations for clients, illustrating
+                            the
+                            system's operations.</p>
+                    </div>
+                </div>
+                <p>These innovations resulted in the company securing a distributor for the off-the-shelf solution in
+                    Kazakhstan, boosting system sales without deployment services by 27%.<br>
+
+                    If you want to learn more about me, simply click on the photo, and a secret page will be opened</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="education my-3">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="fc gap-3 education-table ps-3 mt-3">
+            <div class="education-item">
+                <h5><i class="fas fa-university"></i> Saint - Petersburg University of Telecommunication</h5>
+                <strong class="text-black-a0">Sep 2009 - Aug 2014</strong>
+                <p>Diploma, Computer Science Engineer</p>
+            </div>
+            <div class="education-item">
+                <h5><i class="fas fa-certificate"></i> Coursera (ScrumTrek), Scrum</h5>
+                <strong class="text-black-a0">Feb 2020</strong>
+                <p>Certificate</p>
+            </div>
+            <div class="education-item">
+                <h5><i class="fas fa-book"></i> Self - education</h5>
+                <strong class="text-black-a0">2007 - Current</strong>
+                <p>
+                    Architect: Archimate, TeamTopologies, TOGAF, C4 model, DDD, Clean Architecture, Microservices, OOP +
+                    Patterns, SOLID<br>
+                    Product manager: JTBD, CJM, User Story Map, Backlog management, A/B, Amplitude, Custdev (+lean)<br>
+                    Project manager: Scrum, Kanban, Less, DMAIC, PMBoK, Jira (advanced), Confluence, Miro, Kaizen
+                    (5S)<br>
+                    System / Business Analytic: BPMN 2, RICE, REST API, XML, Requirements, 5 why<br>
+                    Python developer: Asyncio, Aiogram, SQLAlchemy, Git, GitLab CI/CD, FastAPI, HTML5, CSS3, JS
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
